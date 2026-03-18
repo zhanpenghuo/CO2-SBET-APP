@@ -13,28 +13,11 @@ DEFAULT_SMOOTH_SBET_MODEL_PATH = "models/smooth_sbet_model.pkl"
 DEFAULT_RF_CO2_MODEL_PATH = "models/final_rf_co2_model.pkl"
 DEFAULT_SMOOTH_CO2_MODEL_PATH = "models/smooth_co2_model.pkl"
 
-# with st.sidebar:
-#     st.header("模型设置")
-
-#     st.subheader("$S_{BET}$ 模型")
-#     rf_sbet_model_path = st.text_input("$S_{BET}$ RF模型路径", value=DEFAULT_RF_SBET_MODEL_PATH)
-#     smooth_sbet_model_path = st.text_input("$S_{BET}$ 平滑模型路径", value=DEFAULT_SMOOTH_SBET_MODEL_PATH)
-
-#     st.subheader("CO₂ 模型")
-#     rf_co2_model_path = st.text_input("CO₂ RF模型路径", value=DEFAULT_RF_CO2_MODEL_PATH)
-#     smooth_co2_model_path = st.text_input("CO₂ 平滑模型路径", value=DEFAULT_SMOOTH_CO2_MODEL_PATH)
-
 
 rf_sbet_model_path = DEFAULT_RF_SBET_MODEL_PATH
 smooth_sbet_model_path = DEFAULT_SMOOTH_SBET_MODEL_PATH
 rf_co2_model_path = DEFAULT_RF_CO2_MODEL_PATH
 smooth_co2_model_path = DEFAULT_SMOOTH_CO2_MODEL_PATH
-
-
-
-
-
-
 
 @st.cache_resource
 def load_four_models(
