@@ -127,8 +127,8 @@ if st.button("开始预测", type="primary"):
 
     r1, r2 = st.columns(2)
     with r1:
-        st.success(f"SBET - RF预测值 = {rf_sbet_pred:.5f}")
-        st.info(f"SBET - 平滑预测值 = {smooth_sbet_pred:.5f}")
+        st.success(f"$S_{BET}$ - RF预测值 = {rf_sbet_pred:.5f}")
+        st.info(f"$S_{BET}$ - 平滑预测值 = {smooth_sbet_pred:.5f}")
     with r2:
         st.success(f"CO₂ - RF预测值 = {rf_co2_pred:.5f}")
         st.info(f"CO₂ - 平滑预测值 = {smooth_co2_pred:.5f}")
@@ -192,6 +192,6 @@ st.markdown(
     """
     - **RF预测值**：原始随机森林主模型的直接输出，精度较高，但在小范围参数变化时可能保持不变。  
     - **平滑预测值**：由平滑代理模型输出，更适合连续调参与网页展示。  
-    - 本网页同时支持 **SBET** 与 **CO₂ 吸附值** 的单组预测和批量预测。  
+    - 本网页同时支持 **$S_{BET}$** 与 **CO₂ 吸附值** 的单组预测和批量预测。  
     """
 )
