@@ -133,8 +133,8 @@ if st.button("开始预测", type="primary"):
 
     r1, r2 = st.columns(2)
     with r1:
-        st.success(f"$S_{BET}$ - RF预测值 = {rf_sbet_pred:.5f}")
-        st.info(f"$S_{BET}$ - 平滑预测值 = {smooth_sbet_pred:.5f}")
+        st.success(f"SBET - RF预测值 = {rf_sbet_pred:.5f}")
+        st.info(f"SBET - 平滑预测值 = {smooth_sbet_pred:.5f}")
     with r2:
         st.success(f"CO₂ - RF预测值 = {rf_co2_pred:.5f}")
         st.info(f"CO₂ - 平滑预测值 = {smooth_co2_pred:.5f}")
